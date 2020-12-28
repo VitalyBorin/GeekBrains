@@ -1,36 +1,12 @@
-from random import randint
-
-def get_vk_friens(vk_id):
-    '''Получает друзей из vk для страницы c vk_id'''
-    return[{'name': 'Женя', 'bthd': '24.03.1987'},
-           {'name': 'Tom', 'bthd': '24.03.1987'},
-           {'name': 'ЖJohn', 'bthd': '13.03.1987'}
-           ]
-
-def get_users_with_birthday(users):
-    result = []
-    for user in users:
-        if '24.04.' in user['bthd']:
-            result.append(user)
-    return result
-
-def generate_congrat(name):
-    result = ''
-    words = ['Поздравляю', 'Счастья!', 'Здоровья!']
-    for i in range (0, randint(1, 8)):
-        result += words[randint(0, len(words)-1)]
-    return f'Дорогой {name}, {result}'
-
-def main1():
-    friends = get_vk_friens('30303')
-    friends_with_bthd = get_users_with_birthday(friends)
-    for user in friends_with_bthd:
-        print(generate_congrat(user['name']))
+user_name=input('Укажите ваше имя: ')
+user_age=int(input('Введите ваш возраст: '))
+current_time=int
+var1 = True
+var2 = 0.98989
+var3 = 'Привет, привет'
+var4 = 123.0
 
 
 
-# friends = get_vk_friens('223423')
-# print(get_users_with_birthday())
-#print(generate_congrat())
-
-main1()
+print('Ваше имя: ', user_name, '\nВаш возраст:', user_age)
+print(var1, var2, var3, var4, int(var2), int(var4))
