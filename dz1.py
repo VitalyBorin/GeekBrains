@@ -10,7 +10,7 @@ def get_vk_friens(vk_id):
 def get_users_with_birthday(users):
     result = []
     for user in users:
-        if '24.03.' in user['bthd']:
+        if '24.04.' in user['bthd']:
             result.append(user)
     return result
 
