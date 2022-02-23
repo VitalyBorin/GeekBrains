@@ -1,5 +1,3 @@
-st = ' '
-
 def int_func(st):
     st1 = st[0].upper()
     st1 = st1 + st[1:]
@@ -7,6 +5,8 @@ def int_func(st):
 
 sss = 'bsd asd asd asd'
 print(int_func(sss))
+
+st = ' '
 sss = input('Введите строку из слов, разделенных пробелами ')
 for i in sss.split():
     st = st + ' ' + str(int_func(i))
