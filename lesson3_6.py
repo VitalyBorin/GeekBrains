@@ -1,7 +1,16 @@
+st = ' '
 
+def int_func(st):
+    st1 = st[0].upper()
+    st1 = st1 + st[1:]
+    return st1
 
-
-
+sss = 'bsd asd asd asd'
+print(int_func(sss))
+sss = input('Введите строку из слов, разделенных пробелами ')
+for i in sss.split():
+    st = st + ' ' + str(int_func(i))
+print(st)
 # 6. Реализовать функцию int_func(), принимающую слово из маленьких латинских букв и возвращающую его же,
 # но с прописной первой буквой. Например, print(int_func(‘text’)) -> Text.
 #
